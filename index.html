@@ -5,31 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LS45 Automotriz - Mockup Simple</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
-    <header>
-        <table border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tr valign="middle">
-                <td align="left">
-                    <h1>LS45 Automotriz</h1>
-                    <p><strong>17 años de experiencia en el rubro automotriz</strong></p>
-                </td>
-                <td align="right" valign="top">
-                    <img src="img/logos/IMG_0787.PNG" alt="Logo LS 45 Automotriz" width="280">
-                </td>
-            </tr>
-        </table>
-        <hr>
-        <nav>
-            <a href="#inicio">INICIO</a> | 
-            <a href="#servicios">SERVICIOS</a> | 
-            <a href="#stock">STOCK</a> | 
-            <a href="#clientes">NUESTROS CLIENTES</a> | 
-            <a href="#contacto">CONTACTO</a> | 
-            <a href="#nosotros">NOSOTROS</a>
+    <header class="site-header">
+        <div class="site-header__top">
+            <div class="site-header__brand">
+                <h1 class="site-header__title">LS45 Automotriz</h1>
+                <p class="site-header__tagline"><strong>17 años de experiencia en el rubro automotriz</strong></p>
+            </div>
+            <div class="site-header__logo-wrap">
+                <img class="site-header__logo" src="img/logos/IMG_0787.PNG" alt="Logo LS 45 Automotriz" width="280">
+            </div>
+        </div>
+        <hr class="site-header__divider">
+        <nav class="site-header__nav" aria-label="Principal">
+            <ul class="site-header__nav-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#stock">Stock</a></li>
+                <li><a href="#clientes">Nuestros clientes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+            </ul>
         </nav>
-        <hr>
+        <hr class="site-header__divider site-header__divider--spaced">
     </header>
 
     <main>
@@ -50,7 +51,7 @@
                 <li><strong>Crédito Automotriz:</strong> Opciones flexibles y accesibles.</li>
                 <li><strong>Seguro Automotriz:</strong> Protección adaptada a tus necesidades.</li>
                 <li><strong>Consignación:</strong> Vende tu auto con nuestro respaldo.</li>
-                <li><strong>Importaciones desde zona franca:</strong> traemos tu vehiculo desde zona franca (servicio disponible solo con certificado de discapacidad)</li>
+                <li><strong>Importaciones desde zona franca:</strong> Traemos tu vehículo desde zona franca (servicio disponible solo con certificado de discapacidad)</li>
             </ul>
             <p>
                 <img src="img/servicios/compra.PNG" alt="Compra" width="350">
