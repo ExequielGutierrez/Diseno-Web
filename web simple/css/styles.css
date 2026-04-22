@@ -1,0 +1,486 @@
+/* =========================================
+   Estilos Generales y Reset
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    /* Fondo gris muy claro */
+    color: #212529;
+    /* Texto gris oscuro */
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Outfit', sans-serif;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Contenedor principal para centrar el contenido */
+.contenedor,
+.contenedor-cabecera,
+.contenedor-navegacion,
+.contenido-destacado,
+.grilla-2,
+.contenido-pie-pagina {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Secciones generales */
+.seccion {
+    padding: 60px 0;
+}
+
+.seccion h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #0056b3;
+    /* Azul acorde al logo */
+}
+
+.descripcion-seccion {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Línea separadora */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #dee2e6;
+    margin: 0;
+}
+
+/* =========================================
+   Cabecera (Header) y Navegación
+   ========================================= */
+.cabecera-principal {
+    background-color: #fff;
+    border-bottom: 2px solid #0056b3;
+}
+
+.contenedor-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.area-logo h1 {
+    font-size: 36px;
+    color: #000;
+}
+
+.area-logo h1 span {
+    color: #007bff;
+    /* Azul del logo */
+}
+
+.lema {
+    font-size: 14px;
+    color: #6c757d;
+    margin-top: 5px;
+}
+
+.imagen-logo img {
+    height: 60px;
+}
+
+/* Barra de navegación */
+.navegacion-principal {
+    background-color: #0056b3;
+}
+
+.enlaces-navegacion {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.enlaces-navegacion li {
+    margin-right: 20px;
+}
+
+.enlaces-navegacion a {
+    display: block;
+    padding: 15px 10px;
+    color: #fff;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.enlaces-navegacion a:hover {
+    background-color: #004494;
+}
+
+/* =========================================
+   Sección Inicio (Destacado)
+   ========================================= */
+.destacado {
+    background-color: #e9ecef;
+    padding: 80px 0;
+}
+
+.contenido-destacado {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.destacado h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #012e5f;
+}
+
+.texto-destacado p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.enfasis {
+    background-color: #fff;
+    padding: 15px;
+    border-left: 4px solid #012750;
+    font-style: italic;
+    color: #444;
+}
+
+.slogan {
+    font-size: 22px;
+    font-weight: bold;
+    color: #02356b;
+    margin-top: 20px;
+}
+
+.llamado-accion-destacado {
+    margin-top: 30px;
+}
+
+/* Botones */
+.boton {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton-principal {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.boton-principal:hover {
+    background-color: #0056b3;
+}
+
+.boton-contorno {
+    background-color: transparent;
+    color: #022750;
+    border: 2px solid #012c5a;
+}
+
+.boton-contorno:hover {
+    background-color: #022750;
+    color: #fff;
+}
+
+/* =========================================
+   Sección Servicios
+   ========================================= */
+.grilla-servicios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tarjeta-servicio {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+}
+
+.icono-servicio img {
+    height: 110px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-servicio h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.tarjeta-servicio p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* =========================================
+   Sección Stock de Vehículos
+   ========================================= */
+.grilla-autos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tarjeta-auto {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carrusel-auto {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+.diapositivas {
+    width: 100%;
+    height: 100%;
+}
+
+.diapositivas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.diapositivas img.activo {
+    display: block;
+}
+
+.boton-carrusel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.boton-carrusel.anterior {
+    left: 0;
+}
+
+.boton-carrusel.siguiente {
+    right: 0;
+}
+
+.boton-carrusel:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.info-auto {
+    padding: 20px;
+}
+
+.info-auto h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #002449;
+}
+
+.especificaciones {
+    margin-bottom: 15px;
+}
+
+.especificaciones li {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.info-auto .descripcion {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+    height: 45px;
+    /* Altura fija para mantener alineación */
+}
+
+/* =========================================
+   Sección Clientes
+   ========================================= */
+.galeria-clientes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.galeria-clientes img {
+    height: 220px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================
+   Sección Contacto
+   ========================================= */
+.grilla-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.info-contacto {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.iconos-sociales {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.icono-social img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.icono-social img:hover {
+    transform: scale(1.1);
+}
+
+.detalles-contacto p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #007bff;
+}
+
+/* Seccion Nosotros */
+.grilla-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.tarjeta-nosotros {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #007bff;
+}
+
+.tarjeta-nosotros p {
+    font-size: 16px;
+    color: #555;
+    text-align: justify;
+}
+
+/* Footer */
+.pie-pagina-principal {
+    background-color: #343a40;
+    color: #fff;
+    padding: 40px 0 20px;
+    text-align: center;
+}
+
+.contenido-pie-pagina p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.inferior-pie-pagina {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #adb5bd;
+    border-top: 1px solid #495057;
+    padding-top: 20px;
+}
+
+/* Responsive */
+
+/* Para tablets (pantallas medianas) */
+@media (max-width: 992px) {
+    .grilla-servicios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grilla-autos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Para teléfonos (pantallas pequeñas) */
+@media (max-width: 768px) {
+    .contenedor-cabecera {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagen-logo {
+        margin-top: 15px;
+    }
+
+    .enlaces-navegacion {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .enlaces-navegacion li {
+        margin: 0;
+        border-bottom: 1px solid #004494;
+    }
+
+    .grilla-servicios,
+    .grilla-autos,
+    .grilla-contacto,
+    .grilla-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-clientes img {
+        width: 100%;
+        height: auto;
+    }
+}
