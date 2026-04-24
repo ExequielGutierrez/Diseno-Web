@@ -4,255 +4,277 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LS45 Automotriz - Mockup Simple</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>LS45 Automotriz - Excelencia en Vehículos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="site-header__top">
-            <div class="site-header__brand">
-                <h1 class="site-header__title">LS45 Automotriz</h1>
-                <p class="site-header__tagline"><strong>17 años de experiencia en el rubro automotriz</strong></p>
+    <header class="cabecera-principal">
+        <div class="contenedor-cabecera">
+            <div class="area-logo">
+                <h1>LS45 <span>Automotriz</span></h1>
+                <p class="lema">17 años de excelencia automotriz</p>
             </div>
-            <div class="site-header__logo-wrap">
-                <img class="site-header__logo" src="img/logos/IMG_0787.PNG" alt="Logo LS 45 Automotriz" width="280">
+            <div class="imagen-logo">
+                <img src="img/logos/IMG_0787.PNG" alt="Logo LS 45 Automotriz">
             </div>
         </div>
-        <hr class="site-header__divider">
-        <nav class="site-header__nav" aria-label="Principal">
-            <ul class="site-header__nav-list">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#stock">Stock</a></li>
-                <li><a href="#clientes">Nuestros clientes</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-            </ul>
+        <nav class="navegacion-principal">
+            <div class="contenedor-navegacion">
+                <ul class="enlaces-navegacion">
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#servicios">SERVICIOS</a></li>
+                    <li><a href="#stock">STOCK</a></li>
+                    <li><a href="#clientes">CLIENTES</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#nosotros">NOSOTROS</a></li>
+                </ul>
+            </div>
         </nav>
-        <hr class="site-header__divider site-header__divider--spaced">
     </header>
 
     <main>
-        <section id="inicio">
-            <h2>¡Bienvenido!</h2>
-            <p>Aquí puedes comprar tu próximo vehículo seminuevo o usado, contamos con crédito automotriz a tu medida, contrata tu seguro automotriz con nosotros. Somos una automotora atendida por sus propios dueños con más 17 años de experiencia en el rubro.</p>
-            <p><em>Nuestros 17 años en el rubro y los cientos de clientes atendidos a lo largo de todo Chile nos avalan con sus recomendaciones, sabemos la importancia que tiene de que recibas una atención fácil, clara y directa de entender para que el proceso de la venta de tu auto sea segura en todo el proceso. Solicita nuestro contrato de consignación único con todas las especificaciones del proceso.</em></p>
-            <p><em>Ser confiables es nuestro sello para crecer</em></p>
-            <h2>¡Ven a visitarnos!</h2>
-            <h3>¡Y vuelve a casa manejando tu nuevo auto!</h3>
+        <section id="inicio" class="destacado seccion">
+            <div class="contenido-destacado">
+                <h2>¡Bienvenido!</h2>
+                <div class="texto-destacado">
+                    <p>Aquí puedes comprar tu próximo vehículo seminuevo o usado, contamos con crédito automotriz a tu
+                        medida, contrata tu seguro automotriz con nosotros. Somos una automotora atendida por sus
+                        propios dueños con <strong>más de 17 años de experiencia</strong> en el rubro.</p>
+                    <p class="enfasis">Nuestros 17 años en el rubro y los cientos de clientes atendidos a lo largo de
+                        todo Chile nos avalan con sus recomendaciones, sabemos la importancia que tiene de que recibas 
+                        una atención fácil, clara y directa de entender para que el proceso de la venta de tu auto sea 
+                        segura en todo el proceso. Solicita nuestro contrato de consignación único con todas las especificaciones
+                        del proceso</p>
+                    <p class="slogan">"Ser confiables es nuestro sello para crecer"</p>
+                </div>
+                <div class="llamado-accion-destacado">
+                    <a href="#contacto" class="boton boton-principal">¡Ven a visitarnos! <br> ¡Y vuelve a casa manejando tu nuevo auto!</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="servicios seccion">
+            <div class="contenedor">
+                <h2>Nuestros Servicios</h2>
+
+                <div class="grilla-servicios">
+                    <div class="tarjeta-servicio">
+                        <div class="icono-servicio"><img src="img/servicios/compra.PNG" alt="Compra"></div>
+                        <h3>Crédito Automotriz</h3>
+                        <p>Contamos con opciones de crédito automotriz flexibles y accesibles para que puedas adquirir el vehículo que deseas de manera conveniente.</p>
+                    </div>
+                    <div class="tarjeta-servicio">
+                        <div class="icono-servicio"><img src="img/servicios/venta.PNG" alt="Consignación"></div>
+                        <h3>Consignación</h3>
+                        <p>Ofrecemos la opción de dejar tu auto en consignación para venderlo con nuestro respaldo y experiencia en el mercado automotriz.</p>
+                    </div>
+                    <div class="tarjeta-servicio">
+                        <div class="icono-servicio"><img src="img/servicios/certificado de discapacidad.PNG" alt="Consignación"></div>
+                        <h3>Importaciones desde zona franca</h3>
+                        <p>Traemos tu vehículo desde zona franca (servicio disponible solo con certificado de discapacidad)</p>
+                    </div>
+                    <div class="tarjeta-servicio">
+                        <div class="icono-servicio"><img src="img/servicios/Post para instagram (cuadrado).png" alt="Venta"></div>
+                        <h3>Seguro Automotriz</h3>
+                        <p>Adquiere tu seguro automotriz con nosotros y mantén tu vehículo protegido en todo momento. Contamos con opciones </p>
+                    </div>                    
+                </div>
+            </div>
         </section>
 
         <hr>
 
-        <section id="servicios">
-            <h2>Nuestros Servicios</h2>
-            <ul>
-                <li><strong>Crédito Automotriz:</strong> Opciones flexibles y accesibles.</li>
-                <li><strong>Seguro Automotriz:</strong> Protección adaptada a tus necesidades.</li>
-                <li><strong>Consignación:</strong> Vende tu auto con nuestro respaldo.</li>
-                <li><strong>Importaciones desde zona franca:</strong> Traemos tu vehículo desde zona franca (servicio disponible solo con certificado de discapacidad)</li>
-            </ul>
-            <p>
-                <img src="img/servicios/compra.PNG" alt="Compra" width="350">
-                <img src="img/servicios/venta.PNG" alt="Venta" width="350">
-                <img src="img/servicios/certificado de discapacidad.PNG" alt="Certificado" height="200">
-            </p>
+        <section id="stock" class="stock seccion">
+            <div class="contenedor">
+                <h2>Stock de Vehículos</h2>
+                <p class="descripcion-seccion">Revisa nuestro stock disponible y encuentre el auto de sus sueños.</p>
+
+                <div class="grilla-autos">
+                    <!-- MG ZS -->
+                    <article class="tarjeta-auto">
+                        <div class="carrusel-auto">
+                            <div class="diapositivas">
+                                <img src="img/stock/mg zs1.jpg" alt="MG ZS vista 1" class="activo">
+                                <img src="img/stock/mg zs2.jpg" alt="MG ZS vista 2">
+                            </div>
+                            <button class="boton-carrusel anterior" onclick="moveSlide(this, -1)">&#10094;</button>
+                            <button class="boton-carrusel siguiente" onclick="moveSlide(this, 1)">&#10095;</button>
+                        </div>
+                        <div class="info-auto">
+                            <h3>MG ZS — SUV Compacta</h3>
+                            <ul class="especificaciones">
+                                <li><strong>Año:</strong> 2025</li>
+                                <li><strong>Color:</strong> Plata metalizado</li>
+                                <li><strong>Transmisión:</strong> Automática</li>
+                                <li><strong>KM:</strong> 32.000 aprox.</li>
+                            </ul>
+                            <p class="descripcion">SUV compacta con amplio habitáculo y diseño moderno.</p>
+                            <a href="https://wa.me/56977562122" target="_blank" class="boton boton-contorno">Consultar</a>
+                        </div>
+                    </article>
+
+                    <!-- OMODA C5 -->
+                    <article class="tarjeta-auto">
+                        <div class="carrusel-auto">
+                            <div class="diapositivas">
+                                <img src="img/stock/omoda c5 1.jpg" alt="OMODA C5 vista 1" class="activo">
+                                <img src="img/stock/omoda c5 2.jpg" alt="OMODA C5 vista 2">
+                            </div>
+                            <button class="boton-carrusel anterior" onclick="moveSlide(this, -1)">&#10094;</button>
+                            <button class="boton-carrusel siguiente" onclick="moveSlide(this, 1)">&#10095;</button>
+                        </div>
+                        <div class="info-auto">
+                            <h3>OMODA C5 — Crossover</h3>
+                            <ul class="especificaciones">
+                                <li><strong>Año:</strong> 2024</li>
+                                <li><strong>Color:</strong> Gris metalizado</li>
+                                <li><strong>Transmisión:</strong> Automática</li>
+                                <li><strong>KM:</strong> 15.000 aprox.</li>
+                            </ul>
+                            <p class="descripcion">Crossover cupé futurista y estilo deportivo juvenil.</p>
+                            <a href="https://wa.me/56977562122" target="_blank" class="boton boton-contorno">Consultar</a>
+                        </div>
+                    </article>
+
+                    <!-- Peugeot 3008 -->
+                    <article class="tarjeta-auto">
+                        <div class="carrusel-auto">
+                            <div class="diapositivas">
+                                <img src="img/stock/peugeot 3008.jpg" alt="Peugeot 3008 vista 1" class="activo">
+                                <img src="img/stock/peugeot 3008 2.jpg" alt="Peugeot 3008 vista 2">
+                            </div>
+                            <button class="boton-carrusel anterior" onclick="moveSlide(this, -1)">&#10094;</button>
+                            <button class="boton-carrusel siguiente" onclick="moveSlide(this, 1)">&#10095;</button>
+                        </div>
+                        <div class="info-auto">
+                            <h3>Peugeot 3008 — Familiar</h3>
+                            <ul class="especificaciones">
+                                <li><strong>Año:</strong> 2022</li>
+                                <li><strong>Color:</strong> Blanco/Negro</li>
+                                <li><strong>Transmisión:</strong> Automática</li>
+                                <li><strong>KM:</strong> 48.000 aprox.</li>
+                            </ul>
+                            <p class="descripcion">SUV europea elegante, familiar y bien equipada.</p>
+                            <a href="https://wa.me/56977562122" target="_blank" class="boton boton-contorno">Consultar</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
         <hr>
 
-        <section id="stock">
-            <h2>Stock de Vehículos</h2>
-            <p><em>Revise nuestro stock disponible y encuentre el auto de sus sueños.</em></p>
-
-            <table border="1" cellpadding="10" cellspacing="0" width="100%">
-                <tr valign="top">
-                    <td align="left" width="33%">
-                        <figure>
-                            <img src="img/stock/001.jpg" alt="MG ZS plata metalizado vista frontal" width="220" height="220">
-                            <figcaption>
-                                <p><strong>MG ZS — SUV compacta</strong></p>
-                                <table border="0" cellpadding="2" cellspacing="0" align="left">
-                                    <tr><td width="120" valign="top"><strong>Modelo:</strong></td><td valign="top">MG ZS</td></tr>
-                                    <tr><td valign="top"><strong>Año:</strong></td><td valign="top">2023</td></tr>
-                                    <tr><td valign="top"><strong>Color:</strong></td><td valign="top">Plata metalizado</td></tr>
-                                    <tr><td valign="top"><strong>Combustible:</strong></td><td valign="top">Bencina</td></tr>
-                                    <tr><td valign="top"><strong>Transmisión:</strong></td><td valign="top">Automática</td></tr>
-                                    <tr><td valign="top"><strong>Kilometraje:</strong></td><td valign="top">32.000 km aprox.</td></tr>
-                                    <tr><td valign="top"><strong>Descripción:</strong></td><td valign="top">SUV plata compacta, parrilla MG, amplio habitáculo y uso mixto.</td></tr>
-                                </table>
-                            </figcaption>
-                        </figure>
-                    </td>
-                    <td align="left" width="33%">
-                        <figure>
-                            <img src="img/stock/002.jpg" alt="MG ZS plata vista frontal tres cuartos" width="220" height="220">
-                            <figcaption>
-                                <p><strong>MG ZS — unidad reciente</strong></p>
-                                <table border="0" cellpadding="2" cellspacing="0" align="left">
-                                    <tr><td width="120" valign="top"><strong>Modelo:</strong></td><td valign="top">MG ZS</td></tr>
-                                    <tr><td valign="top"><strong>Año:</strong></td><td valign="top">2025</td></tr>
-                                    <tr><td valign="top"><strong>Color:</strong></td><td valign="top">Plata metalizado</td></tr>
-                                    <tr><td valign="top"><strong>Combustible:</strong></td><td valign="top">Bencina</td></tr>
-                                    <tr><td valign="top"><strong>Transmisión:</strong></td><td valign="top">Automática</td></tr>
-                                    <tr><td valign="top"><strong>Kilometraje:</strong></td><td valign="top">8.000 km aprox.</td></tr>
-                                    <tr><td valign="top"><strong>Descripción:</strong></td><td valign="top">Unidad reciente, frontal moderno, urbano y versátil en ruta.</td></tr>
-                                </table>
-                            </figcaption>
-                        </figure>
-                    </td>
-                    <td align="left" width="34%">
-                        <figure>
-                            <img src="img/stock/003.jpg" alt="OMODA C5 gris metalizado vista lateral" width="220" height="220">
-                            <figcaption>
-                                <p><strong>OMODA C5 — crossover</strong></p>
-                                <table border="0" cellpadding="2" cellspacing="0" align="left">
-                                    <tr><td width="120" valign="top"><strong>Modelo:</strong></td><td valign="top">OMODA C5</td></tr>
-                                    <tr><td valign="top"><strong>Año:</strong></td><td valign="top">2024</td></tr>
-                                    <tr><td valign="top"><strong>Color:</strong></td><td valign="top">Gris metalizado</td></tr>
-                                    <tr><td valign="top"><strong>Combustible:</strong></td><td valign="top">Bencina</td></tr>
-                                    <tr><td valign="top"><strong>Transmisión:</strong></td><td valign="top">Automática</td></tr>
-                                    <tr><td valign="top"><strong>Kilometraje:</strong></td><td valign="top">15.000 km aprox.</td></tr>
-                                    <tr><td valign="top"><strong>Descripción:</strong></td><td valign="top">Crossover cupé futurista, cinco puertas y estilo deportivo juvenil.</td></tr>
-                                </table>
-                            </figcaption>
-                        </figure>
-                    </td>
-                </tr>
-                <tr valign="top">
-                    <td align="left" width="33%">
-                        <figure>
-                            <img src="img/stock/004.jpg" alt="Changan UNI-T gris oscuro vista lateral" width="220" height="220">
-                            <figcaption>
-                                <p><strong>Changan UNI-T — diseño vanguardista</strong></p>
-                                <table border="0" cellpadding="2" cellspacing="0" align="left">
-                                    <tr><td width="120" valign="top"><strong>Modelo:</strong></td><td valign="top">Changan UNI-T</td></tr>
-                                    <tr><td valign="top"><strong>Año:</strong></td><td valign="top">2023</td></tr>
-                                    <tr><td valign="top"><strong>Color:</strong></td><td valign="top">Gris oscuro metalizado</td></tr>
-                                    <tr><td valign="top"><strong>Combustible:</strong></td><td valign="top">Bencina</td></tr>
-                                    <tr><td valign="top"><strong>Transmisión:</strong></td><td valign="top">Automática</td></tr>
-                                    <tr><td valign="top"><strong>Precio referencia:</strong></td><td valign="top">$10.690.000 (sujeto a confirmación)</td></tr>
-                                    <tr><td valign="top"><strong>Descripción:</strong></td><td valign="top">Líneas vanguardistas, techo flotante y fuerte presencia en ruta.</td></tr>
-                                </table>
-                            </figcaption>
-                        </figure>
-                    </td>
-                    <td align="left" width="33%">
-                        <figure>
-                            <img src="img/stock/005.jpg" alt="Peugeot 3008 blanco techo negro vista lateral" width="220" height="220">
-                            <figcaption>
-                                <p><strong>Peugeot 3008 — SUV familiar</strong></p>
-                                <table border="0" cellpadding="2" cellspacing="0" align="left">
-                                    <tr><td width="120" valign="top"><strong>Modelo:</strong></td><td valign="top">Peugeot 3008</td></tr>
-                                    <tr><td valign="top"><strong>Año:</strong></td><td valign="top">2022</td></tr>
-                                    <tr><td valign="top"><strong>Color:</strong></td><td valign="top">Blanco con techo negro</td></tr>
-                                    <tr><td valign="top"><strong>Combustible:</strong></td><td valign="top">Bencina</td></tr>
-                                    <tr><td valign="top"><strong>Transmisión:</strong></td><td valign="top">Automática</td></tr>
-                                    <tr><td valign="top"><strong>Kilometraje:</strong></td><td valign="top">48.000 km aprox.</td></tr>
-                                    <tr><td valign="top"><strong>Descripción:</strong></td><td valign="top">SUV europea elegante, familiar, sobria y bien equipada.</td></tr>
-                                </table>
-                            </figcaption>
-                        </figure>
-                    </td>
-                    <td align="left" width="34%">
-                        <figure>
-                            <img src="img/stock/006.jpg" alt="Peugeot 3008 blanco vista frontal con techo negro" width="220" height="220">
-                            <figcaption>
-                                <p><strong>Peugeot 3008 — vista frontal</strong></p>
-                                <table border="0" cellpadding="2" cellspacing="0" align="left">
-                                    <tr><td width="120" valign="top"><strong>Modelo:</strong></td><td valign="top">Peugeot 3008</td></tr>
-                                    <tr><td valign="top"><strong>Año:</strong></td><td valign="top">2021</td></tr>
-                                    <tr><td valign="top"><strong>Color:</strong></td><td valign="top">Blanco con techo negro</td></tr>
-                                    <tr><td valign="top"><strong>Combustible:</strong></td><td valign="top">Bencina</td></tr>
-                                    <tr><td valign="top"><strong>Transmisión:</strong></td><td valign="top">Automática</td></tr>
-                                    <tr><td valign="top"><strong>Kilometraje:</strong></td><td valign="top">44.000 km</td></tr>
-                                    <tr><td valign="top"><strong>Descripción:</strong></td><td valign="top">Bitono, faros LED, confort y equilibrio ciudad y carretera.</td></tr>
-                                </table>
-                            </figcaption>
-                        </figure>
-                    </td>
-                </tr>
-            </table>
+        <section id="clientes" class="clientes seccion">
+            <div class="contenedor">
+                <h2>Nuestros Clientes</h2>
+                <p class="descripcion-seccion">Gracias a quienes confían en nosotros. La satisfacción de nuestros clientes es
+                    nuestro mejor respaldo.</p>
+                <div class="galeria-clientes">
+                    <img src="img/clientes/cliente_5637.png" alt="Entrega Toyota RAV4">
+                    <img src="img/clientes/cliente_5634.png" alt="Cliente feliz">
+                    <img src="img/clientes/cliente_5920.png" alt="Entrega Mitsubishi SUV">
+                    <img src="img/clientes/cliente_6549.png" alt="Entrega Ford Fiesta">
+                    <img src="img/clientes/cliente_5617.png" alt="Entrega Mercedes-Benz">
+                </div>
+            </div>
         </section>
 
-        <hr>
-
-        <section id="clientes">
-            <h2>Nuestros Clientes</h2>
-            <p>Gracias a quienes confían en nosotros. Aquí algunas entregas recientes.</p>
-            <p>
-                <img src="img/clientes/cliente_5637.png" alt="Cliente feliz junto a su Toyota RAV4 blanca en LS45 Automotriz" width="200">
-                <img src="img/clientes/cliente_5634.png" alt="Cliente con su Toyota RAV4 y pulgar arriba, LS45 Automotriz" width="200">
-                <img src="img/clientes/cliente_5920.png" alt="Pareja feliz con su SUV Mitsubishi, LS45 Automotriz" width="200">
-                <img src="img/clientes/cliente_6549.png" alt="Cliente junto a su Ford Fiesta rojo, LS45 Automotriz" height="200">
-                <img src="img/clientes/cliente_5617.png" alt="Cliente junto a su Mercedes-Benz, LS45 Automotriz" width="200">
-            </p>
-            <p><em>La confianza de nuestros clientes es nuestro mejor respaldo.</em></p>
+        <section id="contacto" class="contacto seccion">
+            <div class="contenedor">
+                <div class="grilla-contacto">
+                    <div class="info-contacto">
+                        <h2>Contacto</h2>
+                        <div class="iconos-sociales">
+                            <a href="https://wa.me/56977562122" target="_blank" class="icono-social">
+                                <img src="img/iconos/icon_whatsapp.png" alt="WhatsApp">
+                            </a>
+                            <a href="https://www.instagram.com/ls45automotriz" target="_blank" class="icono-social">
+                                <img src="img/iconos/icon_instagram.png" alt="Instagram">
+                            </a>
+                            <a href="https://web.facebook.com/ls45automotriz.cl/?_rdc=1&_rdr#" target="_blank"
+                                class="icono-social">
+                                <img src="img/iconos/icon_facebook.png" alt="Facebook">
+                            </a>
+                            <a href="mailto:info@ls45automotriz.cl" class="icono-social">
+                                <img src="img/iconos/icon_email.png" alt="Email">
+                            </a>
+                        </div>
+                        <div class="detalles-contacto">
+                            <p><strong>Ubicación:</strong> Puerta Oriente 361 Torre C, Of 609, Colina</p>
+                            <p><strong>Teléfonos:</strong> +56 9 7756 2122 | +56 9 4946 8946</p>
+                        </div>
+                    </div>
+                    <div class="mapa-contacto">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3338.9666!2d-70.6874!3d-33.3138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662b9a7f3f2f3f1%3A0x1234567890abcdef!2sPuerta%20Oriente%20361%2C%20Colina!5e0!3m2!1ses!2scl!4v1713000000000!5m2!1ses!2scl"
+                            width="100%" height="350" style="border:0; border-radius: 12px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <hr>
-
-        <section id="contacto">
-            <h2>Contacto y Ubicación</h2>
-
-            <p>
-                <img src="img/iconos/icon_location.png" width="28">
-                <a href="https://maps.app.goo.gl/pLfJbCvDMYwS5UPSA" target="_blank">
-                    Puerta Oriente 361 Torre C, Of 609, Colina
-                </a>
-            </p>
-
-            <h3>Canales de Comunicación</h3>
-
-            <p>
-                <img src="img/iconos/icon_whatsapp.png" width="28">
-                <a href="https://wa.me/56977562122" target="_blank">+56 9 7756 2122</a><br>
-
-                <img src="img/iconos/icon_whatsapp.png" width="28">
-                <a href="https://wa.me/56949468946" target="_blank">+56 9 4946 8946</a>
-            </p>
-
-            <p>
-                <img src="img/iconos/icon_instagram.png" width="28">
-                <a href="https://www.instagram.com/ls45automotriz" target="_blank">@ls45automotriz</a>
-            </p>
-
-            <p>
-                <img src="img/iconos/icon_facebook.png" width="28">
-                <a href="https://web.facebook.com/ls45automotriz.cl/?_rdc=1&_rdr#" target="_blank">LS45 Automotriz</a>
-            </p>
-
-            <p>
-                <img src="img/iconos/icon_email.png" width="28">
-                <a href="mailto:info@ls45automotriz.cl">info@ls45automotriz.cl</a>
-            </p>
-        </section>
-
-        <hr>
-
-        <section id="nosotros">
-            <h2>Sobre Nosotros</h2>
-            <p><strong>LS45 Automotriz Misión:</strong></p>
-            <p>
-                Brindar a cada cliente una experiencia automotriz confiable, transparente y humana.
-                Nos comprometemos a conectar personas con vehículos que potencien su estilo de vida, combinando análisis técnico, acompañamiento cercano y asesoría estratégica.
-                En LS45 Automotriz creemos que comprar un auto no es solo una transacción, sino una decisión de vida que merece confianza, claridad y propósito.
-            </p>
-            
-            <p><strong>LS45 Automotriz Visión:</strong></p>
-            <p>
-                Ser reconocidos como una automotora referente en Chile por su enfoque integral, donde la excelencia comercial y la ética humana se encuentran.
-                Aspiramos a construir una comunidad de conductores conscientes, que valoren la seguridad, el rendimiento y la coherencia entre lo que conducen y la vida que desean manejar.
-                Nuestra visión es transformar la compra de un vehículo en una experiencia de conexión, progreso y evolución personal.
-            </p>
+        <section id="nosotros" class="nosotros seccion">
+            <div class="grilla-2">
+                <div class="tarjeta-nosotros">
+                    <h2>Nuestra Misión</h2>
+                    <p>
+                        Brindar a cada cliente una experiencia automotriz confiable, transparente y humana. 
+                        Nos comprometemos a conectar personas con vehículos que potencien su estilo de vida, 
+                        combinando análisis técnico, acompañamiento cercano y asesoría estratégica. 
+                        En LS45 Automotriz creemos que comprar un auto no es solo una transacción, sino una 
+                        decisión de vida que merece confianza, claridad y propósito.
+                    </p>
+                </div>
+                <div class="tarjeta-nosotros">
+                    <h2>Nuestra Visión</h2>
+                    <p>
+                        Ser reconocidos como una automotora referente en Chile por su enfoque integral, donde 
+                        la excelencia comercial y la ética humana se encuentran. Aspiramos a construir una 
+                        comunidad de conductores conscientes, que valoren la seguridad, el rendimiento y la 
+                        coherencia entre lo que conducen y la vida que desean manejar. Nuestra visión es transformar 
+                        la compra de un vehículo en una experiencia de conexión, progreso y evolución personal.
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
 
-    <hr>
-    <footer>
-        <p>&copy; 2026 LS45 Automotriz. "Ser confiables es nuestro sello para crecer".</p>
+    <footer class="pie-pagina-principal">
+        <div class="contenido-pie-pagina">
+            <p>&copy; 2026 LS45 Automotriz. "Ser confiables es nuestro sello para crecer".</p>
+            <div class="inferior-pie-pagina">
+                Desarrollado para Evaluación 2 - Programación Web
+            </div>
+        </div>
     </footer>
+    <script>
+        function moveSlide(btn, direction) {
+            const slider = btn.parentElement;
+            const images = slider.querySelectorAll('.diapositivas img');
+            let activeIndex = 0;
+
+            images.forEach((img, index) => {
+                if (img.classList.contains('activo')) {
+                    activeIndex = index;
+                    img.classList.remove('activo');
+                }
+            });
+
+            let nextIndex = activeIndex + direction;
+            if (nextIndex >= images.length) nextIndex = 0;
+            if (nextIndex < 0) nextIndex = images.length - 1;
+
+            images[nextIndex].classList.add('activo');
+        }
+    </script>
 </body>
 
 </html>
