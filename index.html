@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="html-con-cabecera-fija">
 
 <head>
     <meta charset="UTF-8">
@@ -10,38 +10,49 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header class="cabecera-principal">
-        <div class="contenedor-cabecera">
-            <div class="area-logo">
-                <h1>LS45 <span>Automotriz</span></h1>
-                <p class="lema">17 años de excelencia automotriz</p>
+    <header class="cabecera-principal ud-header" id="cabeceraPrincipal">
+        <div class="cabecera-barra contenedor-cabecera">
+            <div class="cabecera-marca">
+                <a href="#inicio" class="bloque-marca" onclick="cerrarMenu()">
+                    <div class="imagen-logo">
+                        <img src="img/logos/logo_blanco_transparente.png" alt="Logo LS 45 Automotriz" class="logo-cabecera">
+                    </div>
+                    <div class="area-logo">
+                        <h1>LS45 <span>Automotriz</span></h1>
+                        <p class="lema">17 años de excelencia automotriz</p>
+                    </div>
+                </a>
             </div>
-            <div class="imagen-logo">
-                <img src="img/logos/IMG_0787.PNG" alt="Logo LS 45 Automotriz">
-            </div>
+            <nav class="navegacion-principal" aria-label="Principal">
+                <div class="contenedor-navegacion">
+                    <button type="button" class="boton-hamburguesa" id="btnMenu" onclick="toggleMenu()" aria-expanded="false" aria-controls="menuNav" aria-label="Abrir menú">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="enlaces-navegacion" id="menuNav">
+                        <li><a href="#inicio" onclick="cerrarMenu()">INICIO</a></li>
+                        <li><a href="#servicios" onclick="cerrarMenu()">SERVICIOS</a></li>
+                        <li><a href="#stock" onclick="cerrarMenu()">STOCK</a></li>
+                        <li><a href="#clientes" onclick="cerrarMenu()">CLIENTES</a></li>
+                        <li><a href="#contacto" onclick="cerrarMenu()">CONTACTO</a></li>
+                        <li><a href="#nosotros" onclick="cerrarMenu()">NOSOTROS</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <nav class="navegacion-principal">
-            <div class="contenedor-navegacion">
-                <ul class="enlaces-navegacion">
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#servicios">SERVICIOS</a></li>
-                    <li><a href="#stock">STOCK</a></li>
-                    <li><a href="#clientes">CLIENTES</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
-                    <li><a href="#nosotros">NOSOTROS</a></li>
-                </ul>
-            </div>
-        </nav>
     </header>
 
     <main>
-        <section id="inicio" class="destacado seccion">
+        <section id="inicio" class="destacado seccion wow fadeIn">
             <div class="contenido-destacado">
-                <h2>¡Bienvenido!</h2>
+                <h2 class="wow fadeInUp" data-wow-delay="0.3s">¡Bienvenido!</h2>
                 <div class="texto-destacado">
                     <p>Aquí puedes comprar tu próximo vehículo seminuevo o usado, contamos con crédito automotriz a tu
                         medida, contrata tu seguro automotriz con nosotros. Somos una automotora atendida por sus
@@ -61,25 +72,25 @@
 
         <section id="servicios" class="servicios seccion">
             <div class="contenedor">
-                <h2>Nuestros Servicios</h2>
+                <h2 class="wow fadeInUp">Nuestros Servicios</h2>
 
                 <div class="grilla-servicios">
-                    <div class="tarjeta-servicio">
+                    <div class="tarjeta-servicio wow fadeInUp" data-wow-delay="0.2s">
                         <div class="icono-servicio"><img src="img/servicios/compra.PNG" alt="Compra"></div>
                         <h3>Crédito Automotriz</h3>
                         <p>Contamos con opciones de crédito automotriz flexibles y accesibles para que puedas adquirir el vehículo que deseas de manera conveniente.</p>
                     </div>
-                    <div class="tarjeta-servicio">
+                    <div class="tarjeta-servicio wow fadeInUp" data-wow-delay="0.4s">
                         <div class="icono-servicio"><img src="img/servicios/venta.PNG" alt="Consignación"></div>
                         <h3>Consignación</h3>
                         <p>Ofrecemos la opción de dejar tu auto en consignación para venderlo con nuestro respaldo y experiencia en el mercado automotriz.</p>
                     </div>
-                    <div class="tarjeta-servicio">
+                    <div class="tarjeta-servicio wow fadeInUp" data-wow-delay="0.6s">
                         <div class="icono-servicio"><img src="img/servicios/certificado de discapacidad.PNG" alt="Consignación"></div>
                         <h3>Importaciones desde zona franca</h3>
                         <p>Traemos tu vehículo desde zona franca (servicio disponible solo con certificado de discapacidad)</p>
                     </div>
-                    <div class="tarjeta-servicio">
+                    <div class="tarjeta-servicio wow fadeInUp" data-wow-delay="0.8s">
                         <div class="icono-servicio"><img src="img/servicios/Post para instagram (cuadrado).png" alt="Venta"></div>
                         <h3>Seguro Automotriz</h3>
                         <p>Adquiere tu seguro automotriz con nosotros y mantén tu vehículo protegido en todo momento. Contamos con opciones </p>
@@ -92,12 +103,12 @@
 
         <section id="stock" class="stock seccion">
             <div class="contenedor">
-                <h2>Stock de Vehículos</h2>
+                <h2 class="wow fadeInUp">Stock de Vehículos</h2>
                 <p class="descripcion-seccion">Revisa nuestro stock disponible y encuentre el auto de sus sueños.</p>
 
                 <div class="grilla-autos">
                     <!-- MG ZS -->
-                    <article class="tarjeta-auto">
+                    <article class="tarjeta-auto wow fadeInUp" data-wow-delay="0.2s">
                         <div class="carrusel-auto">
                             <div class="diapositivas">
                                 <img src="img/stock/mg zs1.jpg" alt="MG ZS vista 1" class="activo">
@@ -120,7 +131,7 @@
                     </article>
 
                     <!-- OMODA C5 -->
-                    <article class="tarjeta-auto">
+                    <article class="tarjeta-auto wow fadeInUp" data-wow-delay="0.4s">
                         <div class="carrusel-auto">
                             <div class="diapositivas">
                                 <img src="img/stock/omoda c5 1.jpg" alt="OMODA C5 vista 1" class="activo">
@@ -143,7 +154,7 @@
                     </article>
 
                     <!-- Peugeot 3008 -->
-                    <article class="tarjeta-auto">
+                    <article class="tarjeta-auto wow fadeInUp" data-wow-delay="0.6s">
                         <div class="carrusel-auto">
                             <div class="diapositivas">
                                 <img src="img/stock/peugeot 3008.jpg" alt="Peugeot 3008 vista 1" class="activo">
@@ -170,17 +181,125 @@
 
         <hr>
 
-        <section id="clientes" class="clientes seccion">
+        <section id="clientes" class="clientes seccion seccion-clientes-testimonial">
             <div class="contenedor">
-                <h2>Nuestros Clientes</h2>
-                <p class="descripcion-seccion">Gracias a quienes confían en nosotros. La satisfacción de nuestros clientes es
-                    nuestro mejor respaldo.</p>
-                <div class="galeria-clientes">
-                    <img src="img/clientes/cliente_5637.png" alt="Entrega Toyota RAV4">
-                    <img src="img/clientes/cliente_5634.png" alt="Cliente feliz">
-                    <img src="img/clientes/cliente_5920.png" alt="Entrega Mitsubishi SUV">
-                    <img src="img/clientes/cliente_6549.png" alt="Entrega Ford Fiesta">
-                    <img src="img/clientes/cliente_5617.png" alt="Entrega Mercedes-Benz">
+                <header class="cabecera-seccion-clientes wow fadeInUp">
+                    <span class="etiqueta-seccion-clientes">Testimonios</span>
+                    <h2>Lo que dicen nuestros clientes</h2>
+                    <p class="descripcion-seccion-clientes">Historias reales de personas que confiaron en LS45 para comprar o vender su vehículo con claridad y respaldo.</p>
+                </header>
+                <div class="envoltorio-carrusel-clientes">
+                    <div class="swiper carrusel-testimonios-ls45">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="tarjeta-testimonio-slide">
+                                    <div class="tarjeta-testimonio-slide__estrellas" aria-hidden="true">
+                                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                    </div>
+                                    <figure class="tarjeta-testimonio-slide__media">
+                                        <img src="img/clientes/cliente_5630.jpg" alt="Chery Tiggo 7 Pro — entrega a Milena Rojas" class="zoomable">
+                                    </figure>
+                                    <p class="tarjeta-testimonio-slide__vehiculo-ref">Vehículo adquirido · <strong>Chery Tiggo 7 Pro</strong></p>
+                                    <blockquote class="tarjeta-testimonio-slide__cita">"La atención fue clara de principio a fin. Salimos con la  Tiggo que buscábamos y sin sorpresas en el proceso."</blockquote>
+                                    <div class="tarjeta-testimonio-slide__autor">
+                                        <div class="tarjeta-testimonio-slide__avatar-iniciales" aria-hidden="true">CR</div>
+                                        <div class="tarjeta-testimonio-slide__datos">
+                                            <h3>Milena Rojas</h3>
+                                            <p class="tarjeta-testimonio-slide__meta">Compra · Colina</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tarjeta-testimonio-slide">
+                                    <div class="tarjeta-testimonio-slide__estrellas" aria-hidden="true">
+                                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                    </div>
+                                    <figure class="tarjeta-testimonio-slide__media">
+                                        <img src="img/clientes/cliente_5634.png" alt="Toyota RAV4 — cliente Ricardo Soto" class="zoomable">
+                                    </figure>
+                                    <p class="tarjeta-testimonio-slide__vehiculo-ref">Vehículo adquirido · <strong>Toyota RAV4</strong></p>
+                                    <blockquote class="tarjeta-testimonio-slide__cita">"Nos explicaron el crédito con paciencia. Recomiendo la automotora por su honestidad y buen trato."</blockquote>
+                                    <div class="tarjeta-testimonio-slide__autor">
+                                        <div class="tarjeta-testimonio-slide__avatar-iniciales" aria-hidden="true">RS</div>
+                                        <div class="tarjeta-testimonio-slide__datos">
+                                            <h3>Ricardo Soto</h3>
+                                            <p class="tarjeta-testimonio-slide__meta">Crédito automotriz · Santiago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tarjeta-testimonio-slide">
+                                    <div class="tarjeta-testimonio-slide__estrellas" aria-hidden="true">
+                                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                    </div>
+                                    <figure class="tarjeta-testimonio-slide__media">
+                                        <img src="img/clientes/cliente_5920.png" alt="Mitsubishi Outlander — entrega Patricia Vega" class="zoomable">
+                                    </figure>
+                                    <p class="tarjeta-testimonio-slide__vehiculo-ref">Vehículo adquirido · <strong>Mitsubishi Outlander</strong></p>
+                                    <blockquote class="tarjeta-testimonio-slide__cita">"Excelente experiencia en la entrega. El vehículo estaba impecable y el equipo muy profesional."</blockquote>
+                                    <div class="tarjeta-testimonio-slide__autor">
+                                        <div class="tarjeta-testimonio-slide__avatar-iniciales" aria-hidden="true">PV</div>
+                                        <div class="tarjeta-testimonio-slide__datos">
+                                            <h3>Patricia Vega</h3>
+                                            <p class="tarjeta-testimonio-slide__meta">Entrega · Región Metropolitana</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tarjeta-testimonio-slide">
+                                    <div class="tarjeta-testimonio-slide__estrellas" aria-hidden="true">
+                                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                    </div>
+                                    <figure class="tarjeta-testimonio-slide__media">
+                                        <img src="img/clientes/cliente_6549.png" alt="Ford Fiesta — consignación Felipe Muñoz" class="zoomable">
+                                    </figure>
+                                    <p class="tarjeta-testimonio-slide__vehiculo-ref">Vehículo vendido · <strong>Ford Fiesta</strong></p>
+                                    <blockquote class="tarjeta-testimonio-slide__cita">"Dejamos el auto en consignación y la venta fue rápida. Comunicación constante y precios justos."</blockquote>
+                                    <div class="tarjeta-testimonio-slide__autor">
+                                        <div class="tarjeta-testimonio-slide__avatar-iniciales" aria-hidden="true">FM</div>
+                                        <div class="tarjeta-testimonio-slide__datos">
+                                            <h3>Felipe Muñoz</h3>
+                                            <p class="tarjeta-testimonio-slide__meta">Consignación · Colina</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tarjeta-testimonio-slide">
+                                    <div class="tarjeta-testimonio-slide__estrellas" aria-hidden="true">
+                                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                    </div>
+                                    <figure class="tarjeta-testimonio-slide__media">
+                                        <img src="img/clientes/cliente_5617.png" alt="Mercedes-Benz Clase C — Daniel Fuentes" class="zoomable">
+                                    </figure>
+                                    <p class="tarjeta-testimonio-slide__vehiculo-ref">Vehículo adquirido · <strong>Mercedes-Benz Clase C</strong></p>
+                                    <blockquote class="tarjeta-testimonio-slide__cita">"Un servicio de primer nivel. Se nota la experiencia de años y el trato cercano de los dueños."</blockquote>
+                                    <div class="tarjeta-testimonio-slide__autor">
+                                        <div class="tarjeta-testimonio-slide__avatar-iniciales" aria-hidden="true">DF</div>
+                                        <div class="tarjeta-testimonio-slide__datos">
+                                            <h3>Daniel Fuentes</h3>
+                                            <p class="tarjeta-testimonio-slide__meta">Compra · Las Condes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carrusel-testimonios-ls45__flechas">
+                            <button type="button" class="swiper-button-prev" aria-label="Testimonio anterior">
+                                <svg class="carrusel-testimonios-ls45__ico" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M19.25 10.2437H4.57187L10.4156 4.29687C10.725 3.9875 10.725 3.50625 10.4156 3.19687C10.1062 2.8875 9.625 2.8875 9.31562 3.19687L2.2 10.4156C1.89062 10.725 1.89062 11.2063 2.2 11.5156L9.31562 18.7344C9.45312 18.8719 9.65937 18.975 9.86562 18.975C10.0719 18.975 10.2437 18.9062 10.4156 18.7687C10.725 18.4594 10.725 17.9781 10.4156 17.6688L4.60625 11.7906H19.25C19.6625 11.7906 20.0063 11.4469 20.0063 11.0344C20.0063 10.5875 19.6625 10.2437 19.25 10.2437Z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                            <button type="button" class="swiper-button-next" aria-label="Testimonio siguiente">
+                                <svg class="carrusel-testimonios-ls45__ico" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M19.8 10.45L12.6844 3.2313C12.375 2.92192 11.8938 2.92192 11.5844 3.2313C11.275 3.54067 11.275 4.02192 11.5844 4.3313L17.3594 10.2094H2.75C2.3375 10.2094 1.99375 10.5532 1.99375 10.9657C1.99375 11.3782 2.3375 11.7563 2.75 11.7563H17.4281L11.5844 17.7032C11.275 18.0126 11.275 18.4938 11.5844 18.8032C11.7219 18.9407 11.9281 19.0094 12.1344 19.0094C12.3406 19.0094 12.5469 18.9407 12.6844 18.7688L19.8 11.55C20.1094 11.2407 20.1094 10.7594 19.8 10.45Z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -188,7 +307,7 @@
         <section id="contacto" class="contacto seccion">
             <div class="contenedor">
                 <div class="grilla-contacto">
-                    <div class="info-contacto">
+                    <div class="info-contacto wow fadeInLeft">
                         <h2>Contacto</h2>
                         <div class="iconos-sociales">
                             <a href="https://wa.me/56977562122" target="_blank" class="icono-social">
@@ -210,7 +329,7 @@
                             <p><strong>Teléfonos:</strong> +56 9 7756 2122 | +56 9 4946 8946</p>
                         </div>
                     </div>
-                    <div class="mapa-contacto">
+                    <div class="mapa-contacto wow fadeInRight">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3338.9666!2d-70.6874!3d-33.3138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662b9a7f3f2f3f1%3A0x1234567890abcdef!2sPuerta%20Oriente%20361%2C%20Colina!5e0!3m2!1ses!2scl!4v1713000000000!5m2!1ses!2scl"
                             width="100%" height="350" style="border:0; border-radius: 12px;" allowfullscreen=""
@@ -223,7 +342,7 @@
 
         <section id="nosotros" class="nosotros seccion">
             <div class="grilla-2">
-                <div class="tarjeta-nosotros">
+                <div class="tarjeta-nosotros wow fadeInLeft">
                     <h2>Nuestra Misión</h2>
                     <p>
                         Brindar a cada cliente una experiencia automotriz confiable, transparente y humana. 
@@ -233,7 +352,7 @@
                         decisión de vida que merece confianza, claridad y propósito.
                     </p>
                 </div>
-                <div class="tarjeta-nosotros">
+                <div class="tarjeta-nosotros wow fadeInRight">
                     <h2>Nuestra Visión</h2>
                     <p>
                         Ser reconocidos como una automotora referente en Chile por su enfoque integral, donde 
@@ -245,6 +364,19 @@
                 </div>
             </div>
         </section>
+
+<section class="seccion marcas">
+  <div class="contenedor">
+    <h2 class="wow fadeInUp">Nuestras Marcas</h2>
+    <div class="grilla-marcas">
+      <div class="marca"><img src="img/iconos/mg.png" alt="MG"></div>
+      <div class="marca"><img src="img/iconos/omoda.png" alt="OMODA"></div>
+      <div class="marca"><img src="img/iconos/peugeot.svg" alt="Peugeot"></div>
+      <div class="marca"><img src="img/iconos/kia.svg	" alt="Kia"></div>
+      <div class="marca"><img src="img/iconos/mazda.png" alt="Mazda"></div>
+    </div>
+  </div>
+</section>
     </main>
 
     <footer class="pie-pagina-principal">
@@ -255,6 +387,9 @@
             </div>
         </div>
     </footer>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
     <script>
         function moveSlide(btn, direction) {
             const slider = btn.parentElement;
